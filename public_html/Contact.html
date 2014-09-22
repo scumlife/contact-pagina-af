@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Filmpje</title>
+        <link href="style.css" rel="stylesheet" type"text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    
+        <div class="contact">
+            <h4>Locatie</h4>
+            West-Kruiskade 26, 3014 AS Rotterdam
+            <h4>Telefoon</h4>
+            010-1234567
+            <h4>Mail ons</h4>
+            <!-- E-mail formulier --->
+                 <div id="contactformulier">
+            <form method="post" action="contact.php" enctype="multipart/form-data">
+                <fieldset> 
+                    <label class="voornaam"> Voornaam:</label>
+                    <input name="voornaam" required maxlength="20" placeholder="Type hier..."/> 
+                    <br> <br>
+                    <label> Achternaam: </label>
+                    <input name="achternaam" required maxlength="20" placeholder="Type hier..."/> 
+                    <br> <br>
+                    <label> Email: </label>
+                    <input type="email" required name="email" placeholder="Type hier..."/>
+                    <br> <br>
+                    <label> Onderwerp: </label>
+                    <select id="keuze"> 
+                        <option value="vraag"> Vraag </option>
+                        <option value="opmerking"> Opmerking </option>
+                        <option value="klacht"> Klacht </option>
+                        <option value="anders"> Anders </option>
+                    </select>
+                    <br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <textarea name="probleem" required placeholder="Type hier..."></textarea>
+                </fieldset>
+                <fieldset>
+                    <input class="verzenden" type="submit" name="verzenden" id="verzenden" value="Feedback Verzenden" />
+                </fieldset>
+            </form>
+         </div>
+            
+        </div>
+    </body>
+</html>

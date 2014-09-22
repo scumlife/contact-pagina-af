@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Filmpje, Oerhollands.</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="ContactStyle.css" rel="stylesheet" type="text/css">
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script type='text/javascript' src='googlemaps.js'> </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    </head>
+    <body>
+<!-- =====================overige informatie========================== -->
+        <div class="overig">
+            <a href="chat.html">Chat </a>| 
+            <a href="overons.html">Over ons </a>|
+             <a href="Contact.html">Contact</a><br>
+        </div>
+            <div class="header">
+                <a href="index.html">
+              
+                </a>
+ <!-- <h1>Oerhollands.</h1> in time out gezet, was vervelend============ -->
+            </div>
+<!-- Side bar =============================================-->
+<div class = "sidebar">
+<!-- Contactgegevens div -->
+        <div class="contactgegevens">
+            <h3> Contactgegevens </h3>
+            <h4 class='locatietelefoon'> Locatie </h4>
+            <p class='locatietelefoonspecificatie'> West-Kruiskade 26 <br> 3014 AS <br> Rotterdam </p>
+            <h4 class='locatietelefoon'> Telefoonnummer </h4>
+            <p class='locatietelefoonspecificatie'> 010-1234567 </p>
+            <h4 class='locatietelefoon'> E-mail </h4>
+            <p class='locatietelefoonspecificatie'> Scrumlife@outlook.com </p>
+        </div>
+<!-- Google maps div -->
+        <div class='googlemaps'>
+            <h3> Waar kunt u ons vinden? </h3>
+            <p> <a href='https://www.google.nl/maps/dir//West-Kruiskade+26,+3014+AS+Rotterdam/@51.9204173,4.4697347,17z/data=!4m13!1m4!3m3!1s0x47c434a3f2470a65:0xd4bc43a2c385f1ed!2sWest-Kruiskade+26,+3014+AS+Rotterdam!3b1!4m7!1m0!1m5!1m1!1s0x47c434a3f2470a65:0xd4bc43a2c385f1ed!2m2!1d4.4697347!2d51.9204173'> Als u op deze tekst klikt kunt u via google maps de routebeschrijving naar filmpje instellen. </a> </p>
+            <div id="map_canvas"></div>
+        </div>
+<!-- einde Side bar =============================================-->
+		</div>
+<!-- midde================================================= -->
+
+									<div class="center"><!-- start centre div-->
+
+			
+<!-- =====================test menu, moeten plannen hoeveel knoppen etc     https://www.youtube.com/watch?v=TmQm-p3wCSU ======================= -->
+			<img id="logo" src="Logo.png">   
+			
+			 
+								
+                <ul id="navmenu">  
+	<li><a href="#">Films</a>
+		<ul class="sub1">
+			<li><a href="#">test</a></li>
+<!-- hier kan je meer links plaatsen ======================================-->
+			<li><a href="#">test</a></li>
+<!-- hier kan je meer links plaatsen========================================= -->
+		</ul>
+	</li>  
+	<li><a href="#">Binnekort</a></li>
+	<li><a href="#">test</a>
+		<ul class="sub1">
+			<li><a href="#">test</a></li>
+			<li><a href="#">test</a></li>
+			<li><a href="#">test</a>
+				<ul class="sub2">
+					<li><a href="#">t</a></li>
+					<li><a href="#">t</a></li>
+					<li><a href="#">test</a></li>
+<!-- en meer============================================== -->
+				</ul>
+			</li>
+           
+		</ul>
+	</li>
+	<li><a href="#">Over Filmpje</a></li>
+<!-- nieuwe knop evt ======================================-->
+</ul>		
+ <!-- einde menu -->
+ 
+ <!-- Begin contactpagina -->
+        <div id="contactpagina">
+            <div id="contacttekst"> 
+                <h2 id="contactpaginatitel"> Contactpagina </h2>
+                <p id="ondertitel"> Vul het onderstaande formulier in om in contact te komen met Filmpje bioscopen </p>
+                <br>
+                <p id="hulptekst"> 
+                    Bij filmpje bioscopen willen wij de klant altijd graag de hulp bieden die het verdient.
+                    Wij staan altijd open voor suggesties en deze zullen wij ook serieus nemen. 
+                    Als u een vraag of klacht heeft dan staan wij u ook graag te hulp om de vraag te beantwoorden of de klacht te verhelpen.
+                    Wij zullen proberen uw vraag dezelfde dag nog te beantwoorden.
+                </p>
+                
+                <div id="contactformulier">
+                    <h3> Contactformulier </h3>
+                    <p> <em>Alle velden zijn verplicht om in te vullen</em> </p>
+            <form method="post" action="contact.php" enctype="multipart/form-data">
+                <fieldset> 
+                    <label class="voornaam"> Voornaam:*</label>
+                    <input name="voornaam" required="required" maxlength="20" placeholder="Type hier uw voornaam..."/> 
+                    <br> <br>
+                    <label> Achternaam:* </label>
+                    <input name="achternaam" required="required" maxlength="20" placeholder="Type hier uw achternaam..."/> 
+                    <br> <br>
+                    <label> E-mail:* </label>
+                    <input type="email" required="required" name="email" placeholder="Type hier uw e-mail..."/>
+                    <br> <br>
+                    <label> Onderwerp:* </label>
+                    <select id="keuze"> 
+                        <option value="vraag"> Vraag </option>
+                        <option value="opmerking"> Opmerking </option>
+                        <option value="klacht"> Klacht </option>
+                        <option value="anders2"> Anders </option>
+                    </select>
+                    <br> <br>
+                    <textarea name="probleem" required="required" placeholder="Type hier minimaal 10 letters..."></textarea>
+                </fieldset>
+                <fieldset>
+                    <input class="verzenden" type="submit" name="verzenden" id="verzenden" value="Feedback Verzenden" />
+                </fieldset>
+            </form>
+         </div>
+                
+                <p id='onderhulptekst'>
+                    Wij beantwoorden de vragen altijd tijdens kantooruren. Heeft u een hele dringen vraag of opmerking, dan kunt u direct contact met ons openemen
+                    door te bellen naar de bioscoop. Het telefoonnummer kunt u vinden in de rechter kolom onder het kopje contactgegevens.
+                </p>
+            </div>
+	   
+        </div>
+    </body>
+</html>
